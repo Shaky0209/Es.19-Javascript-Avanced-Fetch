@@ -87,14 +87,7 @@ ul {
   background-color: white;
   padding: 0px 20px;
   border-radius: 18px;
-}
-
-.btn-close{
-  background-color: white;
-}
-
-.modal-header{
-  color: white;
+  border: none;
 }
 
 .list-section{

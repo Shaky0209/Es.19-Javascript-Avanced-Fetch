@@ -5,13 +5,12 @@ const displayMetallica = document.querySelector("#metallica");
 const queenSection = document.querySelector("#queenSection");
 const displayQueen = document.querySelector("#queen");
 const btnArt = document.querySelectorAll(".btn-art")
-const makeList = document.querySelector(".createList-btn");
+const createList = document.querySelector(".createList-btn");
 const popUp = document.querySelector(".pop-up");
 const eminemSUrl = "https://striveschool-api.herokuapp.com/api/deezer/search?q=eminem";
 const metallicaSUrl = "https://striveschool-api.herokuapp.com/api/deezer/search?q=metallica";
 const queenSUrl = "https://striveschool-api.herokuapp.com/api/deezer/search?q=queen";
 let popUpStatus = false;
-let array;
 
 alert("Per visualizzare le playlist clicca sul bottone  'CREATE LIST' sulla tua sinistra.");
 
@@ -83,7 +82,8 @@ btnArt.forEach(element => {
 
 
 displayList(metallicaSUrl, metallicaSection, displayMetallica);
-makeList.addEventListener("click", ()=>{
+
+createList.addEventListener("click", ()=>{
     if(!popUpStatus){
         popUp.style.display = "block";
         popUpStatus = true;
